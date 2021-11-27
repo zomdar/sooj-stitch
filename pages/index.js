@@ -1,7 +1,9 @@
 import Head from "next/head";
+import dynamic from "next/dynamic";
 
 export default function Home() {
   const Home = dynamic(() => import("./home"));
+
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-2">
       <Head>
